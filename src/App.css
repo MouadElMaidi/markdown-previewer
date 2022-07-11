@@ -1,0 +1,52 @@
+/*Editor CSS*/
+.editor {
+  width: 50%;
+  margin-top: 20px;
+  box-shadow: 5px 5px 18px -2px #888888, -5px -5px 18px -2px #888888;
+}
+
+.title {
+  background: rgba(0, 153, 153);
+  padding: 5px;
+  margin: 0;
+  box-shadow: 5px 5px 18px #888888;
+}
+
+.editor--input {
+  width: 100%;
+  background:rgba(249, 253, 253, 0.429);
+  resize: vertical;
+  min-height: 200px;
+}
+
+/*Previewer CSS*/
+
+.previewer {
+  width: 65%;
+  margin-top: 20px;
+  box-shadow: 5px 5px 18px -2px #888888, -5px -5px 18px -2px #888888;
+}
+
+.previewer--display {
+  width: 100%;
+  min-height: 200px;
+  background: rgba(249, 253, 253, 0.429);
+  font-family: 'Roboto', sans-serif;
+}
+
+/*CSS for components inside our preview panel*/
+code {
+  background: white;
+}
+
+img { 
+  width: 100%;
+}
+
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
+}
