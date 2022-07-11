@@ -5,7 +5,7 @@ export default function Previewer(props) {
     return(
         <div className="previewer">
             <h3 className="title">Previewer</h3>
-            <div className="previewer--display" dangerouslySetInnerHTML={{__html: props.previewText}}>
+            <div className="previewer--display" id="preview" dangerouslySetInnerHTML={{__html: props.previewText}}>
             </div>
         </div>
     )

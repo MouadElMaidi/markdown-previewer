@@ -6,6 +6,7 @@ export default function Editor(props) {
         <div className="editor">
             <h3 className="title">Editor</h3>
             <textarea
+                id="editor"
                 className="editor--input"
                 rows={12}
                 name="markdown"
