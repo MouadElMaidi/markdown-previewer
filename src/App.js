@@ -3,7 +3,7 @@ import Editor from "./components/Editor"
 import Previewer from "./components/Previewer"
 import React from "react"
 import { marked } from 'marked'
-import {defaultText} from "./default-text"
+import { defaultText } from "./default-text"
 
 
 function App() {
@@ -12,6 +12,10 @@ function App() {
   function handleClick(event) {
     setEditorText(event.target.value);
   }
+
+  marked.setOptions({
+    breaks: true
+  })
 
   let markedText = marked(editorText)
 
