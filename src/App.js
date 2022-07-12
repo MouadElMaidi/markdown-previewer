@@ -8,15 +8,17 @@ import {defaultText} from "./default-text"
 
 function App() {
   const [editorText, setEditorText] = React.useState(defaultText);
-  
+
   function handleClick(event) {
     setEditorText(event.target.value);
   }
 
+  let markedText = marked(editorText)
+
   return (
     <div className="app">
       <Editor handleClick={handleClick} value={editorText} />
-      <Previewer previewText={marked(editorText)} />
+      <Previewer previewText={markedText} />
     </div>
   );
 }

@@ -28,10 +28,15 @@
 }
 
 .previewer--display {
+  padding: 20px 20px;
   width: 100%;
   min-height: 200px;
   background: rgba(249, 253, 253, 0.429);
   font-family: 'Roboto', sans-serif;
+}
+
+.previewer--display > *:first-child {
+  margin-top: 0;
 }
 
 /*CSS for components inside our preview panel*/
